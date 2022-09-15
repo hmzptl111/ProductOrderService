@@ -1,7 +1,5 @@
 package com.productorder.resource;
 
-import java.net.URL;
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,8 +13,8 @@ import com.productorder.bean.Order;
 @RequestMapping("/orders")
 public class ProductOrderResource {
 	@PostMapping(path = "")
-	public URL saveOrder(@RequestBody Order order) {
-		return null;
+	public boolean saveOrder(@RequestBody Order order) {
+		return false;
 	}
 	
 	@GetMapping(path = "/{id}")
